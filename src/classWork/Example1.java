@@ -1,6 +1,6 @@
-package chapter2.classWork;
+package classWork;
 
-public class Example {
+public class Example1 {
 
     public static void main(String[] args) {
         System.out.print("5+5=");

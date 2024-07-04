@@ -1,4 +1,4 @@
-package chapter2.classWork;
+package classWork;
 
 public class Example2 {
 
