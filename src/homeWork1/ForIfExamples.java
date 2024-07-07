@@ -23,7 +23,7 @@ public class ForIfExamples {
         System.out.println();
 
 //      Example4
-        for (int j = 1; j <= 20; j++) {
+        for (int j = 0; j < 20; j++) {
             j = j + 1;
             System.out.print(j + " ");
         }
