@@ -1,4 +1,4 @@
-package chapter2;
+package classWork.classWork2;
 
 public class IfSample {
 

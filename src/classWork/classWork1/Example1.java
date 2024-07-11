@@ -1,4 +1,4 @@
-package classWork;
+package classWork.classWork1;
 
 public class Example1 {
 
