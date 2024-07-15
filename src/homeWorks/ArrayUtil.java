@@ -33,11 +33,15 @@ public class ArrayUtil {
 //  մեջտեղի թիվը
         if (numbers.length <= 2) {
             System.out.println("cant print middle value");
-        } else if (numbers.length % 2 == 0) {
-            System.out.println("մեջտեղի թիվը: " + numbers[numbers.length / 2 - 1] + " " + numbers[numbers.length / 2]);
-        } else {
+        }
+        if (numbers.length > 2 && numbers.length % 2 == 1) {
             System.out.println("մեջտեղի թիվը: " + numbers[numbers.length / 2]);
         }
+        if (numbers.length > 2 && numbers.length % 2 == 0) {
+            System.out.println("մեջտեղի թիվը: " + numbers[numbers.length / 2 - 1] + " " + numbers[numbers.length / 2]);
+        }
+
+
 
 //  զույգերի քանակը
         int a = 0;
