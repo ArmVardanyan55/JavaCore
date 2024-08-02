@@ -1,27 +1,29 @@
-package homeWorks;
+package homeWorks.homeWork3;
 
 public class ArrayUtil {
+    int[] numbers = {1, 6, 3, 9, 15, 52, -3, 5, 8,};
 
-    public static void main(String[] args) {
-        int[] numbers = {1, 6, 3, 9, 15, 52, -3, 5, 8,};
-
-//  բոլոր էլեմենտները
+    void allElements() {
         System.out.print("բոլոր էլեմենտները: ");
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
         System.out.println();
+    }
 
-//  առաջին էլեմենտը
+    void firstElement() {
         System.out.println("առաջին էլեմենտը: " + numbers[0]);
+    }
 
-//  վերջին էլեմենտը
+    void lastElement() {
         System.out.println("վերջին էլեմենտը: " + (numbers.length - 1));
+    }
 
-//  մասիվի երկարությունը
+    void arrayLength() {
         System.out.println("մասիվի երկարությունը: " + numbers.length);
+    }
 
-//  մասիվի ամենափոքր թիվը
+    void min() {
         int min = numbers[0];
         for (int i = 1; i < numbers.length; i++) {
             if (numbers[i] < min) {
@@ -29,8 +31,9 @@ public class ArrayUtil {
             }
         }
         System.out.println("մասիվի ամենափոքր թիվը: " + min);
+    }
 
-//  մեջտեղի թիվը
+    void middleValue() {
         if (numbers.length <= 2) {
             System.out.println("cant print middle value");
         }
@@ -40,10 +43,9 @@ public class ArrayUtil {
         if (numbers.length > 2 && numbers.length % 2 == 0) {
             System.out.println("մեջտեղի թիվը: " + numbers[numbers.length / 2 - 1] + " " + numbers[numbers.length / 2]);
         }
+    }
 
-
-
-//  զույգերի քանակը
+    void oddCount() {
         int a = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 0) {
@@ -51,8 +53,9 @@ public class ArrayUtil {
             }
         }
         System.out.println("զույգերի քանակը: " + a);
+    }
 
-//  կենտերի քանակը
+    void evenCount() {
         int b = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 1) {
@@ -60,23 +63,24 @@ public class ArrayUtil {
             }
         }
         System.out.println("կենտերի քանակը: " + b);
+    }
 
-//  էլեմենտների գումարը
-        int c = 0;
+    void sum() {
+        int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
-            c += numbers[i];
+            sum += numbers[i];
         }
-        System.out.println("էլեմենտների գումարը: " + c);
+        System.out.println("էլեմենտների գումարը: " + sum);
+    }
 
-
-//  միջին թվաբանականը
+    void avg() {
         int d = 0;
         for (int i = 0; i < numbers.length; i++) {
             d += numbers[i];
         }
         d /= numbers.length;
         System.out.println("միջին թվաբանականը: " + d);
-
     }
+
 }
 

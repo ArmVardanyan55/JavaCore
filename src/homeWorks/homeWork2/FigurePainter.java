@@ -1,57 +1,60 @@
-package homeWorks;
+package homeWorks.homeWork2;
 
 public class FigurePainter {
 
-    public static void main(String[] args) {
-//      Figure1
-        for (int i = 0; i < 5; i++) {
+    void figureOne(int n, char c) {
+        for (int i = 0; i < n; i++) {
             for (int j = 0; j < i + 1; j++) {
-                System.out.print("* ");
+                System.out.print(c + " ");
             }
             System.out.println();
         }
         System.out.println();
+    }
 
-//      Figure2
+    void figureTwo(char c) {
         for (int i = 0; i < 5; i++) {
-            for (int j = 5; j > i ; j--) {
-                System.out.print("* ");
+            for (int j = 5; j > i; j--) {
+                System.out.print(c + " ");
             }
             System.out.println();
         }
         System.out.println();
+    }
 
-//      Figure3
+    void figureThree(char c) {
         for (int i = 0; i < 5; i++) {
             for (int j = 4; j > i; j--) {
                 System.out.print("  ");
             }
             for (int j = 0; j <= i; j++) {
-                System.out.print("* ");
+                System.out.print(c + " ");
             }
             System.out.println();
         }
         System.out.println();
+    }
 
-//      Figure4
+    void figureFour(char c) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < i; j++) {
                 System.out.print("  ");
             }
             for (int j = 5; j > i; j--) {
-                System.out.print("* ");
+                System.out.print(c + " ");
             }
             System.out.println();
         }
         System.out.println();
+    }
 
-//      Figure5
+    void figureFive(char c) {
         for (int i = 0; i < 5; i++) {
-            for (int j = 5; j > i ; j--) {
+            for (int j = 5; j > i; j--) {
                 System.out.print(" ");
             }
             for (int j = 0; j <= i; j++) {
-                System.out.print("* ");
+                System.out.print(c + " ");
             }
             System.out.println();
         }
@@ -60,14 +63,9 @@ public class FigurePainter {
                 System.out.print(" ");
             }
             for (int j = 4; j > i; j--) {
-                System.out.print(" *");
+                System.out.print(" " + c);
             }
             System.out.println();
         }
-
-
-
     }
-
-
 }
