@@ -20,7 +20,7 @@ public class DynamicArray {
     //եթե չկա նման ինդեքսով էլեմենտ, տպել, որ չկա նման էլեմենտ
     public void deleteByIndex(int index) {
         if (index < 0 || index > size) {
-            System.err.println(index);
+            System.out.println(index);
         } else {
             for (int i = index + 1; i < size; i++) {
                 array[i - 1] = array[i];
