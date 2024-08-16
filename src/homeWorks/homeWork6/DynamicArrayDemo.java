@@ -10,16 +10,28 @@ public class DynamicArrayDemo {
         dynamicArray.add(8);
         dynamicArray.add(9);
         dynamicArray.add(10);
+
         dynamicArray.print();
+
         System.out.println(dynamicArray.getByIndex(3));
         System.out.println(dynamicArray.getByIndex(26));
         dynamicArray.add(2);
+
         dynamicArray.add(14);
         dynamicArray.add(25);
+
+        dynamicArray.set(2,34);
+
         dynamicArray.add(46);
         dynamicArray.add(37);
         dynamicArray.add(29);
+
+        dynamicArray.deleteByIndex(7);
+
         dynamicArray.print();
+
+        System.out.println(dynamicArray.exists(4));
+        System.out.println(dynamicArray.exists(24));
 
 
     }
